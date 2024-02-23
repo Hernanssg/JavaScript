@@ -38,10 +38,6 @@ public class Operaciones {
 		System.out.println("El resultado de la Resta2 es: " + resta2);
 		System.out.println("El resultado de la Resta3 es: " + resta3);
 		System.out.println("El resultado de las cuentas es: " + cuentas);
-	
-		
-		
-		
 
 }
 
