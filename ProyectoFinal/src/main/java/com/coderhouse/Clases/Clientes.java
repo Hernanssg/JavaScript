@@ -1,85 +1,68 @@
 package com.coderhouse.Clases;
 
+
+
 import com.coderhouse.Interfaces.Usuarios;
 
 public class Clientes implements Usuarios{
 
+	private String Usuario;
+	private Integer Contraseña;
 	private String Email;
 	private Integer Dni;
 	private String Nacionalidad;
+	
+	
+	
+	public String getUsuario() {
+		return Usuario;
+	}
+	public void setUsuario(String usuario) {
+		Usuario = usuario;
+	}
+	public Integer getContraseña() {
+		return Contraseña;
+	}
+	public void setContraseña(Integer contraseña) {
+		Contraseña = contraseña;
+	}
+	public String getEmail() {
+		return Email;
+	}
+	public void setEmail(String email) {
+		Email = email;
+	}
+	public Integer getDni() {
+		return Dni;
+	}
+	public void setDni(Integer dni) {
+		Dni = dni;
+	}
+	public String getNacionalidad() {
+		return Nacionalidad;
+	}
+	public void setNacionalidad(String nacionalidad) {
+		Nacionalidad = nacionalidad;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Clientes [Usuario=" + Usuario + ", Contraseña=" + Contraseña + ", Email=" + Email + ", Dni=" + Dni
+				+ ", Nacionalidad=" + Nacionalidad + "]";
+	}
+	
+
+	
+	@Override
+	public  boolean Premium() {
+	
+		return true;
+	}
+	@Override
+	public  boolean Descuentos() {
 		
-	
-	//Sobrecarga de Constructores
-		//Constructores
-		public Clientes() {
-			super();}		
-		
-	
-	
-		public Clientes (String Email, String Nacionalidad, Integer Dni) { 
-			
-			this.Nacionalidad = Nacionalidad;
-			this.Dni = Dni;
-			this.Email = Email;
-			
-			
-		
-		}
-
-
-		public String getEmail() {
-			return this.Email;
-		}
-
-
-		public void setEmail(String email) {
-			this.Email = email;
-		}
-
-
-		public Integer getDni() {
-			return this.Dni;
-		}
-
-
-		public void setDni(Integer dni) {
-			this.Dni = dni;
-		}
-
-
-		public String getNacionalidad() {
-			return this.Nacionalidad;
-		}
-
-
-		public void setNacionalidad(String nacionalidad) {
-			this.Nacionalidad = nacionalidad;
-		}
-
-
-		@Override
-		public void Usuario() {
-			
-		}
-
-		@Override
-		public void Contraseña() {
-		
-			
-		}
-
-		@Override
-		public boolean Descuentos() {
-			
-			return Descuentos();
-		}
-	
-	
-	
-	
-	
+		return true;
+	}
 	
 }
-	
-	
-
